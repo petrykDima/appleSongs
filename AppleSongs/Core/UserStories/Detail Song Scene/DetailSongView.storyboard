@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Song View Controller-->
+        <scene sceneID="46L-cX-sw4">
+            <objects>
+                <viewController storyboardIdentifier="DetailSongViewController" id="UOJ-3J-5aV" customClass="DetailSongViewController" customModule="AppleSongs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hYO-zP-YPl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxg-7R-jWM">
+                                <rect key="frame" x="5" y="54" width="404" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPN-t6-dRQ">
+                                <rect key="frame" x="10" y="84.5" width="394" height="394"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZPN-t6-dRQ" secondAttribute="height" multiplier="1:1" id="930-Ja-PP8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JL6-dS-l3t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pxg-7R-jWM" firstAttribute="top" secondItem="JL6-dS-l3t" secondAttribute="top" constant="10" id="Ikm-zP-JbB"/>
+                            <constraint firstItem="Pxg-7R-jWM" firstAttribute="leading" secondItem="JL6-dS-l3t" secondAttribute="leading" constant="5" id="Ow3-YQ-Nty"/>
+                            <constraint firstItem="ZPN-t6-dRQ" firstAttribute="leading" secondItem="JL6-dS-l3t" secondAttribute="leading" constant="10" id="aZo-RK-xrQ"/>
+                            <constraint firstItem="JL6-dS-l3t" firstAttribute="trailing" secondItem="ZPN-t6-dRQ" secondAttribute="trailing" constant="10" id="iql-Kk-vhc"/>
+                            <constraint firstItem="JL6-dS-l3t" firstAttribute="trailing" secondItem="Pxg-7R-jWM" secondAttribute="trailing" constant="5" id="kcy-Az-dkb"/>
+                            <constraint firstItem="ZPN-t6-dRQ" firstAttribute="top" secondItem="Pxg-7R-jWM" secondAttribute="bottom" constant="10" id="n8m-Hd-Le1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="songArtworkImageView" destination="ZPN-t6-dRQ" id="xrh-K6-BRu"/>
+                        <outlet property="songTitleLabel" destination="Pxg-7R-jWM" id="ysV-Rb-6R3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QeJ-pf-Kxy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
