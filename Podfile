@@ -7,7 +7,7 @@ target 'AppleSongs' do
 
   # Pods for AppleSongs
   
-  pod 'SwiftLint'
+  #pod 'SwiftLint'
   
   # API
   pod 'Alamofire'
